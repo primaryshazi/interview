@@ -58,7 +58,7 @@ select，poll，epoll都是IO多路复用的机制。I/O多路复用就通过一
 
 ### epoll函数
 
-> int epoll_wait(int epfd, struct epoll_event *events, int maxevents, int timeout);  
+> int epoll_wait(int epfd, struct epoll_event *events, int maxevents, int timeout);
 
 1. epfd：创建的epoll操作描述符
 2. events：若有事件发生，返回发生事件的结构体
@@ -82,6 +82,6 @@ select，poll，epoll都是IO多路复用的机制。I/O多路复用就通过一
 
 ### epoll是同步还是异步
 
-从IO层面来看,epoll绝对是同步的；从消息处理层面来看，epoll是异步的
+从IO层面来看，epoll绝对是同步的；从消息处理层面来看，epoll是异步的
 
 ---
